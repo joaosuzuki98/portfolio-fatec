@@ -339,7 +339,7 @@ export default function Portfolio() {
 							<p className="font-medium text-gray-900 text-xs lg:text-sm group-hover:text-purple-600 transition-colors">
 								Inv.Sort
 							</p>
-							<p className="text-xs text-gray-500">BugBusters • 08/2024 - 11/2024</p>
+							<p className="text-xs text-gray-500">Fictício • 08/2024 - 11/2024</p>
 						</div>
 					</a>
 
@@ -387,7 +387,7 @@ export default function Portfolio() {
 							<p className="font-medium text-gray-900 text-xs lg:text-sm group-hover:text-teal-600 transition-colors">
 								Checkpoint
 							</p>
-							<p className="text-xs text-gray-500">From Zer0_ • 02/2025 - 06/2025</p>
+							<p className="text-xs text-gray-500">Necto • 02/2025 - 06/2025</p>
 						</div>
 					</a>
 
