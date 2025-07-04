@@ -490,6 +490,66 @@ export default function Portfolio() {
 							<h2 className="text-2xl lg:text-3xl font-bold text-gray-900">Meus Projetos</h2>
 						</div>
 
+						{/* Índice/Sumário de Projetos */}
+						<div className="mb-8 lg:mb-12">
+							<h3 className="text-sm lg:text-base font-semibold text-gray-900 mb-1 uppercase tracking-wide">
+								Sumário
+							</h3>
+							<p className="mb-4 text-sm text-slate-500">
+								Clique em um projeto para vê-lo
+							</p>
+							<div className="flex flex-wrap justify-between w-full">
+								<a
+									href="#projeto-2024-1-smartfarm"
+									className="flex items-center gap-2 px-3 py-2 rounded-full bg-green-50 hover:bg-green-100 text-green-700 text-sm font-medium transition"
+								>
+									<Leaf className="w-4 h-4" />
+									Smart-Farm
+								</a>
+
+								<a
+									href="#projeto-2024-2-invsort"
+									className="flex items-center gap-2 px-3 py-2 rounded-full bg-purple-50 hover:bg-purple-100 text-purple-700 text-sm font-medium transition"
+								>
+									<Blocks className="w-4 h-4" />
+									Inv.Sort
+								</a>
+
+								<a
+									href="#projeto-2024-2-site"
+									className="flex items-center gap-2 px-3 py-2 rounded-full bg-indigo-50 hover:bg-indigo-100 text-indigo-700 text-sm font-medium transition"
+								>
+									<Globe className="w-4 h-4" />
+									Site Corporativo
+								</a>
+
+								<a
+									href="#projeto-2024-2-sistema"
+									className="flex items-center gap-2 px-3 py-2 rounded-full bg-teal-50 hover:bg-teal-100 text-teal-700 text-sm font-medium transition"
+								>
+									<SquareChartGantt className="w-4 h-4" />
+									Sistema de Gestão
+								</a>
+
+								<a
+									href="#projeto-2025-1-checkpoint"
+									className="flex items-center gap-2 px-3 py-2 rounded-full bg-teal-50 hover:bg-teal-100 text-teal-700 text-sm font-medium transition"
+								>
+									<Clock className="w-4 h-4" />
+									Checkpoint
+								</a>
+
+								<a
+									href="#projeto-2025-1"
+									className="flex items-center gap-2 px-3 py-2 rounded-full bg-orange-50 hover:bg-orange-100 text-orange-700 text-sm font-medium transition"
+								>
+									<Play className="w-4 h-4" />
+									Clube de Membros
+								</a>
+							</div>
+						</div>
+
+
 						<div className="relative">
 							{/* Timeline Line */}
 							<div className="hidden lg:block absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 to-purple-500"></div>
