@@ -323,7 +323,7 @@ export default function Portfolio() {
 							<p className="font-medium text-gray-900 text-xs lg:text-sm group-hover:text-green-600 transition-colors">
 								Smart-Farm
 							</p>
-							<p className="text-xs text-gray-500">BugBusters • 02/2024 - 06/2024</p>
+							<p className="text-xs text-gray-500">I9 • 02/2024 - 06/2024</p>
 						</div>
 					</a>
 
@@ -476,7 +476,7 @@ export default function Portfolio() {
 						<div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl lg:rounded-2xl p-6 lg:p-8 text-white">
 							<h2 className="text-2xl lg:text-3xl font-bold mb-3 lg:mb-4">Bem-vindo ao meu Portfólio! 👋</h2>
 							<p className="text-blue-100 text-base lg:text-lg leading-relaxed">
-								Me chamo João Suzuki e atualmente estou cursando o 3º semetre do tecnólogo de Desenvolvimento de Software Multiplataforma pela FATEC e durante este tempo pude particapar em projetos desenvolvidos em parceria com empresas reais. Esses projetos demonstram minhas habilidades em desenvolvimento de APIs, inteligência artificial e tecnologias emergentes.
+								Me chamo João Suzuki e atualmente estou cursando o 3º semetre do tecnólogo de Desenvolvimento de Software Multiplataforma pela FATEC e durante este tempo pude particapar em projetos desenvolvidos em parceria com empresas reais e fictícias. Também sou formado em técnico em informática pela Senac, onde cursei durante o período de 2022 até 2024. Desde 2024, trabalho na empresa CFI Consultoria como desenvolvedor, sendo responsável pela criação e gestão dos sistemas internos da empresa.
 							</p>
 						</div>
 					</section>
@@ -528,12 +528,12 @@ export default function Portfolio() {
 											<div className="flex items-start justify-between">
 												<div>
 													<CardTitle className="text-lg lg:text-xl text-gray-900 mb-2">
-														Projeto Smart-Farm - BugBusters
+														Projeto Smart-Farm - I9
 													</CardTitle>
 													<div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-xs lg:text-sm text-gray-600">
 														<div className="flex items-center gap-1">
 															<Users className="w-3 h-3 lg:w-4 lg:h-4" />
-															BugBusters
+															Parceiro: I9
 														</div>
 														<div className="flex items-center gap-1">
 															<Calendar className="w-3 h-3 lg:w-4 lg:h-4" />
@@ -548,12 +548,12 @@ export default function Portfolio() {
 											{/* Título do Projeto */}
 											<div className="bg-gradient-to-r from-green-50 to-blue-50 p-3 lg:p-4 rounded-lg border-l-4 border-green-500">
 												<h3 className="text-base lg:text-lg font-bold text-gray-900 mb-2">
-													Estufa Inteligente para Otimização Agrícola
+													Sistema de monitoramento para estufa inteligente
 												</h3>
 												<p className="text-sm lg:text-base text-gray-700 leading-relaxed">
 													Este projeto foi realizado para a Fatec junto à equipe I9 para simular um ambiente real de
 													desenvolvimento utilizando a metodologia ágil. O objetivo deste projeto era desenvolver um
-													sistema para monitoramento de uma estufa inteligente.
+													sistema para monitoramento de uma estufa inteligente, onde dados vindos desta estufa pudessem ser armazenados e analisados.
 												</p>
 											</div>
 
@@ -598,11 +598,15 @@ export default function Portfolio() {
 														Hard Skills Desenvolvidas
 													</h4>
 													<div className="flex flex-wrap gap-1.5 lg:gap-2">
-														{["HTML", "CSS", "JavaScript", "Python", "MySQL"].map((skill) => (
-															<Badge key={skill} className={`${techColors[skill]} font-medium text-xs`}>
-																{skill}
-															</Badge>
-														))}
+														<div className="text-sm text-blue-900">
+															<p>Utilizei CSS e HTML na estruturação das páginas para organizar os elementos desenvolvidos pelos outros membros da equipe e também para a criação do seletor de dias e para exibição dos dados da estufa relacionados àquele dia.</p>
+															<p className="my-2">
+																Já o JavaScript usei para obter os dados do backend e para criar o funcionalidade de poder mover o seletor e exibir os dias, além da criação de filtros dos dias.
+															</p>
+															<p>
+																Usei o Flask para a criação das renderizações das páginas e para o CRUD dos dados vindos das estufas.
+															</p>
+														</div>
 													</div>
 												</div>
 												<div className="bg-green-50 p-3 lg:p-4 rounded-lg">
@@ -610,28 +614,11 @@ export default function Portfolio() {
 														<Brain className="w-3 h-3 lg:w-4 lg:h-4" />
 														Soft Skills Desenvolvidas
 													</h4>
-													<p className="text-green-800 text-xs lg:text-sm leading-relaxed">
-														<ul>
-															<li>
-																<strong>Trabalho em equipe</strong>
-															</li>
-															<li>
-																<strong>Proatividade</strong>
-															</li>
-															<li>
-																<strong>Liderança</strong>
-															</li>
-															<li>
-																<strong>Comunicação</strong>
-															</li>
-															<li>
-																<strong>Organização</strong>
-															</li>
-															<li>
-																<strong>Resolução de Problemas</strong>
-															</li>
-														</ul>
-													</p>
+													<div className="flex flex-wrap gap-1.5 lg:gap-2">
+														<div className="text-sm text-green-900">
+															<p>Pelo fato de ter atuado como como PO neste projeto tive muitas oportunidades para melhorar minha forma de me comunicar tanto com a equipe como com o cliente, percebi como é importante sempre manter contato com o cliente e tirar dúvidas ao longo do caminho para poder corrigir rapidamente quaisquer erros que aparecessem durante o desenvolvimento do código. Além disso procurei sempre ajudar meus colegas quando eu percebia que eles tinham alguma dificuldade relacionada ao desenvolvimento do código.</p>
+														</div>
+													</div>
 												</div>
 											</div>
 
@@ -681,12 +668,12 @@ export default function Portfolio() {
 											<div className="flex items-start justify-between">
 												<div>
 													<CardTitle className="text-lg lg:text-xl text-gray-900 mb-2">
-														Projeto Inv.Sort - BugBusters
+														Projeto Inv.Sort - Cliente Fictício
 													</CardTitle>
 													<div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-xs lg:text-sm text-gray-600">
 														<div className="flex items-center gap-1">
 															<Users className="w-3 h-3 lg:w-4 lg:h-4" />
-															BugBusters
+															Parceiro: Professor Cláudio (cliente fictício)
 														</div>
 														<div className="flex items-center gap-1">
 															<Calendar className="w-3 h-3 lg:w-4 lg:h-4" />
@@ -701,7 +688,7 @@ export default function Portfolio() {
 											{/* Título do Projeto */}
 											<div className="bg-gradient-to-r from-purple-50 to-pink-50 p-3 lg:p-4 rounded-lg border-l-4 border-purple-500">
 												<h3 className="text-base lg:text-lg font-bold text-gray-900 mb-2">
-													Sistema Inteligente de Gestão de Estoque
+													Sistema Para Gestão de Estoque
 												</h3>
 												<p className="text-sm lg:text-base text-gray-700 leading-relaxed">
 													Este projeto foi realizado para a Fatec para simular um ambiente real de desenvolvimento
@@ -754,11 +741,14 @@ export default function Portfolio() {
 														Hard Skills Desenvolvidas
 													</h4>
 													<div className="flex flex-wrap gap-1.5 lg:gap-2">
-														{["React", "Figma", "API RESTful", "JavaScript", "HTML", "CSS", "Express"].map((skill) => (
-															<Badge key={skill} className={`${techColors[skill]} font-medium text-xs`}>
-																{skill}
-															</Badge>
-														))}
+														<div className="text-sm text-blue-900">
+															<p>
+																No front-end, utilizei React para construção de interfaces dinâmicas e interativas, além de Tailwind CSS, que me permitiu desenvolver uma interface moderna e responsiva com agilidade. Implementei Axios para integração com as APIs, criando componentes funcionais como o dashboard de gerenciamento, tabelas dinâmicas com filtros e formulários com validação. Essas tarefas exigiram conhecimento em manipulação de estados, hooks, rotas e boas práticas de usabilidade.
+															</p>
+															<p className="mt-1">
+																No back-end, trabalhei com Express.js para estruturar as rotas REST responsáveis por operações de CRUD de produtos, categorias, funcionários e estoque. Utilizei o Prisma ORM para modelagem do banco de dados e manipulação eficiente das entidades, garantindo integridade e escalabilidade da aplicação.
+															</p>
+														</div>
 													</div>
 												</div>
 												<div className="bg-green-50 p-3 lg:p-4 rounded-lg">
@@ -766,25 +756,13 @@ export default function Portfolio() {
 														<Brain className="w-3 h-3 lg:w-4 lg:h-4" />
 														Soft Skills Desenvolvidas
 													</h4>
-													<p className="text-green-800 text-xs lg:text-sm leading-relaxed">
-														<ul>
-															<li>
-																<strong>Trabalho em equipe</strong>
-															</li>
-															<li>
-																<strong>Organização</strong>
-															</li>
-															<li>
-																<strong>Resolução de Problemas</strong>
-															</li>
-															<li>
-																<strong>Comunicação</strong>
-															</li>
-															<li>
-																<strong>Proatividade</strong>
-															</li>
-														</ul>
-													</p>
+													<div className="flex flex-wrap gap-1.5 lg:gap-2">
+														<div className="text-sm text-green-900">
+															<p>
+																Neste projeto enfrentamos alguns problemas de organização. Mesmo assim, ainda pude aprender muito com este projeto. A maior deles foi a persistência, mesmo com o problema que tivemos nas sprints, continuei dando meu melhor e ajudando a equipe onde pude e fiz de tudo para poder entregar o código sempre dentro do prazo e de forma funcional.
+															</p>
+														</div>
+													</div>
 												</div>
 											</div>
 
@@ -838,7 +816,7 @@ export default function Portfolio() {
 													<div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-xs lg:text-sm text-gray-600">
 														<div className="flex items-center gap-1">
 															<Users className="w-3 h-3 lg:w-4 lg:h-4" />
-															CFI Consultoria
+															Cliente: CFI Consultoria
 														</div>
 														<div className="flex items-center gap-1">
 															<Calendar className="w-3 h-3 lg:w-4 lg:h-4" />
@@ -853,7 +831,7 @@ export default function Portfolio() {
 											{/* Título do Projeto */}
 											<div className="bg-gradient-to-r from-indigo-50 to-purple-50 p-3 lg:p-4 rounded-lg border-l-4 border-indigo-500">
 												<h3 className="text-base lg:text-lg font-bold text-gray-900 mb-2">
-													Presença Digital Profissional e Moderna
+													Site Corporativo
 												</h3>
 												<p className="text-sm lg:text-base text-gray-700 leading-relaxed">
 													Desenvolvimento completo do site corporativo da CFI Consultoria, criando uma presença digital
@@ -893,8 +871,7 @@ export default function Portfolio() {
 													completa que elevou significativamente a presença online da CFI Consultoria. Desenvolvi um
 													site corporativo implementando um design responsivo e moderno que se adapta
 													perfeitamente a todos os dispositivos. Criei funcionalidades personalizadas em PHP para
-													formulários de contato avançados, sistema de agendamento online e integração com ferramentas
-													de CRM. Também fui responsável pela otimização SEO, configuração de hospedagem segura,
+													necessidades pontuais do projeto. Também fui responsável pela otimização SEO, configuração de hospedagem segura,
 													implementação de medidas de segurança contra ataques, e criação de um painel administrativo
 													intuitivo que permite à equipe da empresa gerenciar conteúdo de forma autônoma.
 												</p>
@@ -908,11 +885,9 @@ export default function Portfolio() {
 														Hard Skills Desenvolvidas
 													</h4>
 													<div className="flex flex-wrap gap-1.5 lg:gap-2">
-														{["Hospedagem de Site", "PHP", "MySQL", "JavaScript"].map((skill) => (
-															<Badge key={skill} className={`${techColors[skill]} font-medium text-xs`}>
-																{skill}
-															</Badge>
-														))}
+														<div className="text-sm text-blue-900">
+															<p>Na maior parte utilizei o contrutor Beaver Builder para construir as fundações do site, porém algumas partes mais avançadas utilizei código HTML, CSS e Javascript como a criação de alguns botões e para o elemento carrosel presente nosso site. A IA presente logo no começo do site também foi criado com na mão, além de ter usado código PHP para poder fazer a comunicação entre o site e a API da Open AI.</p>
+														</div>
 													</div>
 												</div>
 												<div className="bg-green-50 p-3 lg:p-4 rounded-lg">
@@ -920,19 +895,11 @@ export default function Portfolio() {
 														<Brain className="w-3 h-3 lg:w-4 lg:h-4" />
 														Soft Skills Desenvolvidas
 													</h4>
-													<p className="text-green-800 text-xs lg:text-sm leading-relaxed">
-														<ul>
-															<li>
-																<strong>Atenção aos Detalhes</strong>
-															</li>
-															<li>
-																<strong>Comunicação </strong>
-															</li>
-															<li>
-																<strong>Organização</strong>
-															</li>
-														</ul>
-													</p>
+													<div className="flex flex-wrap gap-1.5 lg:gap-2">
+														<div className="text-sm text-green-900">
+															<p>Por se tratar de um projeto solo, o maior desafio que tive foi a organização do tempo e por essa razão eu dividi o projeto em pequenas "sprints" de alguns dias, onde eu procurava focar em parte diferentes do site, também fui muito atencioso e procurei sempre entender as necessidades do cliente e quais problemas ele enfrentava com o antigo site.</p>
+														</div>
+													</div>
 												</div>
 											</div>
 
@@ -985,12 +952,12 @@ export default function Portfolio() {
 											<div className="flex items-start justify-between">
 												<div>
 													<CardTitle className="text-lg lg:text-xl text-gray-900 mb-2">
-														Sistema de Gerenciamento de Clientes e Vendas - CFI
+														Sistema de Gerenciamento de Clientes e Vendas - CFI Consultoria
 													</CardTitle>
 													<div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-xs lg:text-sm text-gray-600">
 														<div className="flex items-center gap-1">
 															<Users className="w-3 h-3 lg:w-4 lg:h-4" />
-															CFI Consultoria
+															Cliente: CFI Consultoria
 														</div>
 														<div className="flex items-center gap-1">
 															<Calendar className="w-3 h-3 lg:w-4 lg:h-4" />
@@ -1058,11 +1025,15 @@ export default function Portfolio() {
 														Hard Skills Desenvolvidas
 													</h4>
 													<div className="flex flex-wrap gap-1.5 lg:gap-2">
-														{["Java", "TypeScript", "MySQL", "API REST"].map((skill) => (
-															<Badge key={skill} className={`${techColors[skill]} font-medium text-xs`}>
-																{skill}
-															</Badge>
-														))}
+														<div className="text-sm text-blue-900">
+															<p>
+																Utilizei a biblioteca visual shadcn para criar toda a parte do frontend junto ao next e por extensão também o tailwind e o typescript, inclusive os gráficos.
+															</p>
+
+															<p className="mt-1">
+																Na parte do backend, decidi por utilizar spring boot por ter sido uma tecnologia que eu tinha trabalhado na faculdade e acabei gostando muito por causa da escalabilidade deste framework. Então todo o backend foi feito em spring.
+															</p>
+														</div>
 													</div>
 												</div>
 												<div className="bg-green-50 p-3 lg:p-4 rounded-lg">
@@ -1070,25 +1041,17 @@ export default function Portfolio() {
 														<Brain className="w-3 h-3 lg:w-4 lg:h-4" />
 														Soft Skills Desenvolvidas
 													</h4>
-													<p className="text-green-800 text-xs lg:text-sm leading-relaxed">
-														<ul>
-															<li>
-																<strong>Análise de Negócios</strong>
-															</li>
-															<li>
-																<strong>Gestão de Mudanças</strong>
-															</li>
-															<li>
-																<strong>Orientação a Resultados</strong>
-															</li>
-															<li>
-																<strong>Comunicação</strong>
-															</li>
-															<li>
-																<strong>Organização</strong>
-															</li>
-														</ul>
-													</p>
+													<div className="flex flex-wrap gap-1.5 lg:gap-2">
+														<div className="text-sm text-green-900">
+															<p>
+																Novamente por estar em um trabalho solo precisei organizar melhor meu tempo e a forma como trabalhava (vinha trabalhando em equipes na facauldade e precisei adaptar) e também por se tratar de um projeto mais difícil do que o primeiro site que tinha feito o que me levou a sair da zona de conforto e trabalhar de forma mais focada.
+															</p>
+
+															<p className="mt-1">
+																E pelo fato de o Java ser uma tecnologia um tanto quanto nova para mim, tive que otimizar meu tempo em sessões de estudo e trabalho.
+															</p>
+														</div>
+													</div>
 												</div>
 											</div>
 										</CardContent>
@@ -1128,12 +1091,12 @@ export default function Portfolio() {
 											<div className="flex items-start justify-between">
 												<div>
 													<CardTitle className="text-lg lg:text-xl text-gray-900 mb-2">
-														Sistema de Ponto Checkpoint - From Zer0_
+														Checkpoint - Necto Systems
 													</CardTitle>
 													<div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-xs lg:text-sm text-gray-600">
 														<div className="flex items-center gap-1">
 															<Users className="w-3 h-3 lg:w-4 lg:h-4" />
-															From Zer0_
+															Parceiro: Necto Systems
 														</div>
 														<div className="flex items-center gap-1">
 															<Calendar className="w-3 h-3 lg:w-4 lg:h-4" />
@@ -1204,11 +1167,15 @@ export default function Portfolio() {
 														Hard Skills Desenvolvidas
 													</h4>
 													<div className="flex flex-wrap gap-1.5 lg:gap-2">
-														{["API RESTful", "Padrões de Projeto", "Java", "TypeScript", "CSS", "HTML"].map((skill) => (
-															<Badge key={skill} className={`${techColors[skill]} font-medium text-xs`}>
-																{skill}
-															</Badge>
-														))}
+														<div className="text-sm text-blue-900">
+															<p>
+																Neste projeto fui o responsável por criar os elementos da página inicial para a marcação de ponto, pelos componentes da página de espelho de ponto e pela barra lateral, o que fiz usando o react e o tailwind. Já na página do admin, fiquei responsável por reestruturá-la para o desktop.
+															</p>
+
+															<p className="mt-1">
+																Na parte do backend criei o sistema de notificação e solicitações usando websockets para o recebimento instântaneo sem a necessidade de atualizar a página, e também pelos endpoints relacionados ao espelho de pontos.
+															</p>
+														</div>
 													</div>
 												</div>
 												<div className="bg-green-50 p-3 lg:p-4 rounded-lg">
@@ -1216,28 +1183,17 @@ export default function Portfolio() {
 														<Brain className="w-3 h-3 lg:w-4 lg:h-4" />
 														Soft Skills Desenvolvidas
 													</h4>
-													<p className="text-green-800 text-xs lg:text-sm leading-relaxed">
-														<ul>
-															<li>
-																<strong>Trabalho em equipe</strong>
-															</li>
-															<li>
-																<strong>Proatividade</strong>
-															</li>
-															<li>
-																<strong>Liderança</strong>
-															</li>
-															<li>
-																<strong>Comunicação</strong>
-															</li>
-															<li>
-																<strong>Organização</strong>
-															</li>
-															<li>
-																<strong>Resolução de problemas</strong>
-															</li>
-														</ul>
-													</p>
+													<div className="flex flex-wrap gap-1.5 lg:gap-2">
+														<div className="text-sm text-green-900">
+															<p>
+																Como trabalhei novamente de PO pude ter a oportunidade mais uma vez de conversar com a cliente e entender as suas dores, o que, na minha visão, é uma das partes mais desafiadoras e importantes desse papel. Essa experiência reforçou minha capacidade de escutar e de entender o outro lado, habilidades essenciais para transformar necessidades subjetivas em requisitos técnicos claros e objetivos.
+															</p>
+
+															<p className="mt-1">
+																Além disso, desenvolvi ainda mais minha comunicação interpessoal, atuando como ponte entre a cliente e a equipe de desenvolvimento, garantindo que todos estivessem alinhados em relação às prioridades e expectativas do projeto
+															</p>
+														</div>
+													</div>
 												</div>
 											</div>
 
@@ -1289,7 +1245,7 @@ export default function Portfolio() {
 													<div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-xs lg:text-sm text-gray-600">
 														<div className="flex items-center gap-1">
 															<Users className="w-3 h-3 lg:w-4 lg:h-4" />
-															CFI Consultoria
+															Parceiro: CFI Consultoria
 														</div>
 														<div className="flex items-center gap-1">
 															<Calendar className="w-3 h-3 lg:w-4 lg:h-4" />
@@ -1358,11 +1314,15 @@ export default function Portfolio() {
 														Hard Skills Desenvolvidas
 													</h4>
 													<div className="flex flex-wrap gap-1.5 lg:gap-2">
-														{["API REST", "Desenvolvimento Mobile", "JavaScript"].map((skill) => (
-															<Badge key={skill} className={`${techColors[skill]} font-medium text-xs`}>
-																{skill}
-															</Badge>
-														))}
+														<div className="text-sm text-blue-900">
+															<p>
+																No servidor, utilizei Express.js com Prisma ORM para estruturar a infraestrutura de dados e garantir operações eficientes e seguras. No front-end, criei uma interface responsiva com React e Tailwind CSS, priorizando usabilidade e desempenho.
+															</p>
+
+															<p className="mt-1">
+																Implementei funcionalidades complexas como upload e streaming de vídeos, chat em tempo real, notificações automatizadas e integração com APIs externas. Otimizei o sistema para melhor desempenho em streaming, garantindo fluidez e estabilidade, além de aplicar boas práticas de segurança para proteger dados sensíveis, especialmente em contextos jurídicos e financeiros.
+															</p>
+														</div>
 													</div>
 												</div>
 												<div className="bg-green-50 p-3 lg:p-4 rounded-lg">
@@ -1370,25 +1330,17 @@ export default function Portfolio() {
 														<Brain className="w-3 h-3 lg:w-4 lg:h-4" />
 														Soft Skills Desenvolvidas
 													</h4>
-													<p className="text-green-800 text-xs lg:text-sm leading-relaxed">
-														<ul>
-															<li>
-																<strong>Adaptabilidade</strong>
-															</li>
-															<li>
-																<strong>Resiliência</strong>
-															</li>
-															<li>
-																<strong>Resolução de problemas</strong>
-															</li>
-															<li>
-																<strong>Organização</strong>
-															</li>
-															<li>
-																<strong>Comunicação</strong>
-															</li>
-														</ul>
-													</p>
+													<div className="flex flex-wrap gap-1.5 lg:gap-2">
+														<div className="text-sm text-green-900">
+															<p>
+																Liderar tecnicamente todas as etapas deste projeto fortaleceu significativamente minha autonomia, organização e capacidade de resolução de problemas complexos. A necessidade de entregar uma solução robusta, segura e funcional exigiu planejamento estratégico, além de adaptabilidade diante de desafios técnicos diversos.
+															</p>
+
+															<p className="mt-1">
+																A criação de um sistema voltado para o setor jurídico e de leilões imobiliários me levou a desenvolver uma comunicação clara e objetiva, especialmente ao lidar com demandas específicas e sensíveis. Além disso, trabalhar de forma autônoma reforçou minha disciplina, gestão de tempo e foco em entregas de valor real para o cliente.
+															</p>
+														</div>
+													</div>
 												</div>
 											</div>
 
