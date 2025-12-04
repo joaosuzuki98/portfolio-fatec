@@ -476,7 +476,7 @@ export default function Portfolio() {
 						<div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl lg:rounded-2xl p-6 lg:p-8 text-white">
 							<h2 className="text-2xl lg:text-3xl font-bold mb-3 lg:mb-4">Bem-vindo ao meu Portfólio! 👋</h2>
 							<p className="text-blue-100 text-base lg:text-lg leading-relaxed">
-								Me chamo João Suzuki e atualmente estou cursando o 3º semetre do tecnólogo de Desenvolvimento de Software Multiplataforma pela FATEC e durante este tempo pude particapar em projetos desenvolvidos em parceria com empresas reais e fictícias. Também sou formado em técnico em informática pela Senac, onde cursei durante o período de 2022 até 2024. Desde 2024, trabalho na empresa CFI Consultoria como desenvolvedor, sendo responsável pela criação e gestão dos sistemas internos da empresa.
+								Me chamo João Suzuki e atualmente estou cursando o 4º semetre do tecnólogo de Desenvolvimento de Software Multiplataforma pela FATEC e durante este tempo pude particapar em projetos desenvolvidos em parceria com empresas reais e fictícias. Também sou formado em técnico em informática pela Senac, onde cursei durante o período de 2022 até 2024. Desde 2024, trabalho na empresa CFI Consultoria como desenvolvedor, sendo responsável pela criação e gestão dos sistemas internos da empresa.
 							</p>
 						</div>
 					</section>
