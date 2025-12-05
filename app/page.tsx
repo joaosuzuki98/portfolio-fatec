@@ -32,6 +32,7 @@ import {
 	Leaf,
 	Blocks,
 	Play,
+	CloudRainWind
 } from "lucide-react"
 import { useState } from "react"
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
@@ -214,6 +215,15 @@ export default function Portfolio() {
 			"/projects/streaming_cfi7.png?height=300&width=600&text=Streaming+Home",
 			"/projects/streaming_cfi8.png?height=300&width=600&text=Streaming+Home",
 			"/projects/streaming_cfi9.png?height=300&width=600&text=Streaming+Home",
+		],
+		nimbus: [
+			"/projects/nimbus1.png?height=300&width=600&text=Streaming+Home",
+			"/projects/nimbus2.png?height=300&width=600&text=Streaming+Home",
+			"/projects/nimbus3.png?height=300&width=600&text=Streaming+Home",
+			"/projects/nimbus4.png?height=300&width=600&text=Streaming+Home",
+			"/projects/nimbus5.png?height=300&width=600&text=Streaming+Home",
+			"/projects/nimbus6.png?height=300&width=600&text=Streaming+Home",
+			"/projects/nimbus7.png?height=300&width=600&text=Streaming+Home",
 		],
 	}
 
@@ -406,6 +416,22 @@ export default function Portfolio() {
 							<p className="text-xs text-gray-500">CFI • 12/2024 - 02/2025</p>
 						</div>
 					</a>
+
+					<a
+						href="#projeto-2025-2-nimbus"
+						className="flex items-center gap-3 p-2 lg:p-3 rounded-lg hover:bg-sky-100 transition-colors group cursor-pointer"
+						onClick={() => setSidebarOpen(false)}
+					>
+						<div className="w-6 h-6 lg:w-8 lg:h-8 bg-gradient-to-br from-blue-900 to-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
+							<CloudRainWind className="w-3 h-3 lg:w-4 lg:h-4 text-white" />
+						</div>
+						<div className="min-w-0 flex-1">
+							<p className="font-medium text-gray-900 text-xs lg:text-sm group-hover:text-sky-600 transition-colors">
+								Nimbus
+							</p>
+							<p className="text-xs text-gray-500">Tecsus • 08/2024 - 11/2025</p>
+						</div>
+					</a>
 				</div>
 			</div>
 
@@ -545,6 +571,14 @@ export default function Portfolio() {
 								>
 									<Play className="w-4 h-4" />
 									Clube de Membros
+								</a>
+
+								<a
+									href="#projeto-2025-2-nimbus"
+									className="flex items-center gap-2 px-3 py-2 rounded-full bg-sky-100 hover:bg-blue-200 text-blue-700 text-sm font-medium transition"
+								>
+									<CloudRainWind className="w-4 h-4" />
+									Nimbus
 								</a>
 							</div>
 						</div>
@@ -1407,6 +1441,136 @@ export default function Portfolio() {
 											{/* Links do Projeto */}
 											<div className="flex flex-col sm:flex-row flex-wrap gap-2 lg:gap-3 pt-3 lg:pt-4 border-t border-gray-200">
 												<a href="https://github.com/joaosuzuki98/cfi-clube-de-membros-front" target="_blank" rel="noopener noreferrer" className="blocka">
+													<Button className="bg-gray-900 hover:bg-gray-800 text-white text-sm lg:text-base">
+														<Github className="w-3 h-3 lg:w-4 lg:h-4 mr-2" />
+														Repositório GitHub
+													</Button>
+												</a>
+											</div>
+										</CardContent>
+									</Card>
+								</div>
+
+								<div
+									id="projeto-2025-2-nimbus"
+									className="relative flex flex-col lg:flex-row lg:items-start gap-4 lg:gap-8"
+								>
+									{/* Timeline Dot */}
+									<div className="hidden lg:block relative z-10 flex-shrink-0">
+										<div className="w-16 h-16 bg-gradient-to-br from-blue-900 to-blue-600 rounded-full flex items-center justify-center shadow-lg">
+											<CloudRainWind className="w-8 h-8 text-white" />
+										</div>
+
+										<div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white text-xs px-2 py-1 rounded-full font-medium">
+											2025
+										</div>
+									</div>
+
+									{/* Project Card */}
+									<Card className="flex-1 bg-white shadow-lg lg:shadow-xl hover:shadow-xl lg:hover:shadow-2xl transition-all duration-300 border-0 overflow-hidden">
+										<div className="relative">
+											<ProjectCarousel images={projectImages.nimbus} alt="Projeto Smart-Farm" />
+											<div className="absolute top-3 lg:top-4 left-3 lg:left-4 z-10">
+												<Badge className="bg-green-500 text-white font-medium text-xs lg:text-sm">Acadêmico</Badge>
+											</div>
+											<div className="absolute top-3 lg:top-4 right-3 lg:right-4 bg-white/90 backdrop-blur-sm rounded-full p-1.5 lg:p-2 z-10">
+												<Button size="sm" variant="ghost" className="h-6 w-6 lg:h-8 lg:w-8 p-0">
+													<ExternalLink className="w-3 h-3 lg:w-4 lg:h-4" />
+												</Button>
+											</div>
+										</div>
+
+										<CardHeader className="pb-3 lg:pb-4 p-4 lg:p-6">
+											<div className="flex items-start justify-between">
+												<div>
+													<CardTitle className="text-lg lg:text-xl text-gray-900 mb-2">
+														Projeto Nimbus - Tecsus
+													</CardTitle>
+													<div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-xs lg:text-sm text-gray-600">
+														<div className="flex items-center gap-1">
+															<Users className="w-3 h-3 lg:w-4 lg:h-4" />
+															Parceiro: Tecsus
+														</div>
+														<div className="flex items-center gap-1">
+															<Calendar className="w-3 h-3 lg:w-4 lg:h-4" />
+															Agosto 2025 - Novembro 2025
+														</div>
+													</div>
+												</div>
+											</div>
+										</CardHeader>
+
+										<CardContent className="space-y-4 lg:space-y-6 p-4 lg:p-6 pt-0">
+											{/* Título do Projeto */}
+											<div className="bg-gradient-to-r from-green-50 to-blue-50 p-3 lg:p-4 rounded-lg border-l-4 border-green-500">
+												<h3 className="text-base lg:text-lg font-bold text-gray-900 mb-2">
+													Sistema de gerenciamento de estações climáticas 
+												</h3>
+												<p className="text-sm lg:text-base text-gray-700 leading-relaxed">
+													Este projeto foi realizado para a Fatec junto à empresa Tecsus para simular um ambiente real de
+													desenvolvimento utilizando a metodologia ágil. O objetivo deste projeto era desenvolver um
+													sistema para gerenciamento de estações metereológicas feitas a partir de uma simples placa e alguns sensores, como um ESP32, por exemplo. Além disso, também é possível gerenciar alertas com base nos sensores das estações e acompanhar eventos em tempo real.
+												</p>
+											</div>
+
+											{/* Tecnologias */}
+											<div>
+												<h4 className="font-semibold text-gray-900 mb-2 lg:mb-3 flex items-center gap-2 text-sm lg:text-base">
+													<Zap className="w-3 h-3 lg:w-4 lg:h-4" />
+													Tecnologias Utilizadas
+												</h4>
+												<div className="flex flex-wrap gap-1.5 lg:gap-2">
+													{["Express", "React", "JavaScript", "MongoDB", "Postgresql", "Vite"].map((tech) => (
+														<Badge
+															key={tech}
+															className={`${techColors[tech] || "bg-gray-500 text-white"} font-medium text-xs lg:text-sm`}
+														>
+															{tech}
+														</Badge>
+													))}
+												</div>
+											</div>
+
+											{/* Contribuições Pessoais */}
+											<div className="bg-amber-50 p-3 lg:p-4 rounded-lg border border-amber-200">
+												<h4 className="font-semibold text-amber-900 mb-2 lg:mb-3 flex items-center gap-2 text-sm lg:text-base">
+													<Target className="w-3 h-3 lg:w-4 lg:h-4" />
+													Contribuições Pessoais
+												</h4>
+												<p className="text-amber-800 leading-relaxed text-sm lg:text-base">
+													Neste projeto fui responsável pela prototipação e desenvolvimento do front-end do projeto. Não só isso, pude trabalhar também nos 3 serviços de back-end que nosso sistema utilizava, onde cuidei da parte dos alertas e também da criação da conexão do websocket. Também fui responsável pelo desenvolvimento das funcionalidades de log e eventos do sistema.
+												</p>
+											</div>
+
+											{/* Hard Skills e Soft Skills */}
+											<div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
+												<div className="bg-blue-50 p-3 lg:p-4 rounded-lg">
+													<h4 className="font-semibold text-blue-900 mb-2 lg:mb-3 flex items-center gap-2 text-sm lg:text-base">
+														<Code className="w-3 h-3 lg:w-4 lg:h-4" />
+														Hard Skills Desenvolvidas
+													</h4>
+													<div className="flex flex-wrap gap-1.5 lg:gap-2">
+														<div className="text-sm text-blue-900">
+															<p>Neste trabalho pude aprimorar ainda mais minhas habilidades em javascript, a trabalhar com agendamento de jobs, com o cron. Também pude aprimorar minhas habilidades de prototipação e desenvolvimento com React.</p>
+														</div>
+													</div>
+												</div>
+												<div className="bg-green-50 p-3 lg:p-4 rounded-lg">
+													<h4 className="font-semibold text-green-900 mb-2 lg:mb-3 flex items-center gap-2 text-sm lg:text-base">
+														<Brain className="w-3 h-3 lg:w-4 lg:h-4" />
+														Soft Skills Desenvolvidas
+													</h4>
+													<div className="flex flex-wrap gap-1.5 lg:gap-2">
+														<div className="text-sm text-green-900">
+															<p>Este trabalho me ajudou a aprimorar minhas habilidades de trabalho em equipe, principalmente no que se refere ao processo de desenvolvimento da equipe, consegui entender a importância que é ter processos bem definidos e como toda a equipe deve estar engajada em seguí-los à risca.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											{/* Links do Projeto */}
+											<div className="flex flex-col sm:flex-row flex-wrap gap-2 lg:gap-3 pt-3 lg:pt-4 border-t border-gray-200">
+												<a href="https://github.com/FR0M-ZER0/Nimbus" target="_blank" rel="noopener noreferrer" className="block">
 													<Button className="bg-gray-900 hover:bg-gray-800 text-white text-sm lg:text-base">
 														<Github className="w-3 h-3 lg:w-4 lg:h-4 mr-2" />
 														Repositório GitHub
