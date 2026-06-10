@@ -1496,7 +1496,7 @@ export default function Portfolio() {
 														</div>
 														<div className="flex items-center gap-1">
 															<Calendar className="w-3 h-3 lg:w-4 lg:h-4" />
-															2026
+															Março 2026 - Junho 2026
 														</div>
 													</div>
 												</div>
