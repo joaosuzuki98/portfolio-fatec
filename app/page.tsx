@@ -1748,6 +1748,15 @@ export default function Portfolio() {
 													</div>
 												</div>
 											</div>
+
+											<div className="flex flex-col sm:flex-row flex-wrap gap-2 lg:gap-3 pt-3 lg:pt-4 border-t border-gray-200">
+												<a href="https://github.com/FR0M-ZER0/PrecedentIA" target="_blank" rel="noopener noreferrer" className="block">
+													<Button className="bg-gray-900 hover:bg-gray-800 text-white text-sm lg:text-base">
+														<Github className="w-3 h-3 lg:w-4 lg:h-4 mr-2" />
+														Repositório GitHub
+													</Button>
+												</a>
+											</div>
 										</CardContent>
 									</Card>
 								</div>
