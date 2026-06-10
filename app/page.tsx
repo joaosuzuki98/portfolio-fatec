@@ -32,6 +32,7 @@ import {
 	Leaf,
 	Blocks,
 	Play,
+	Scale,
 } from "lucide-react"
 import { useState } from "react"
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
@@ -215,6 +216,11 @@ export default function Portfolio() {
 			"/projects/streaming_cfi8.png?height=300&width=600&text=Streaming+Home",
 			"/projects/streaming_cfi9.png?height=300&width=600&text=Streaming+Home",
 		],
+		precedentia: [
+			"/projects/precedentia1.png?height=300&width=600&text=PrecedentIA+Dashboard",
+			"/projects/precedentia2.png?height=300&width=600&text=PrecedentIA+Busca",
+			"/projects/precedentia3.png?height=300&width=600&text=PrecedentIA+Minuta",
+		],
 	}
 
 	const techColors = {
@@ -243,6 +249,16 @@ export default function Portfolio() {
 		MySQL: "bg-orange-600 text-white",
 		"Prisma ORM": "bg-gray-800 text-white",
 		MongoDB: "bg-green-800 text-white",
+		PostgreSQL: "bg-blue-800 text-white",
+
+		// AI / Cloud
+		"LangChain": "bg-emerald-600 text-white",
+		"OpenAI API": "bg-gray-900 text-white",
+		"RAG": "bg-violet-600 text-white",
+		"Embeddings": "bg-fuchsia-600 text-white",
+		"Vector DB": "bg-rose-700 text-white",
+		"FastAPI": "bg-teal-600 text-white",
+		"n8n": "bg-orange-700 text-white",
 
 		// Technologies
 		Analytics: "bg-green-500 text-white",
@@ -406,6 +422,22 @@ export default function Portfolio() {
 							<p className="text-xs text-gray-500">CFI • 12/2024 - 02/2025</p>
 						</div>
 					</a>
+
+					<a
+						href="#projeto-2025-2-precedentia"
+						className="flex items-center gap-3 p-2 lg:p-3 rounded-lg hover:bg-slate-50 transition-colors group cursor-pointer"
+						onClick={() => setSidebarOpen(false)}
+					>
+						<div className="w-6 h-6 lg:w-8 lg:h-8 bg-gradient-to-br from-slate-600 to-blue-700 rounded-full flex items-center justify-center flex-shrink-0">
+							<Scale className="w-3 h-3 lg:w-4 lg:h-4 text-white" />
+						</div>
+						<div className="min-w-0 flex-1">
+							<p className="font-medium text-gray-900 text-xs lg:text-sm group-hover:text-slate-700 transition-colors">
+								PrecedentIA
+							</p>
+							<p className="text-xs text-gray-500">Xertica.ai • 2025</p>
+						</div>
+					</a>
 				</div>
 			</div>
 
@@ -498,7 +530,7 @@ export default function Portfolio() {
 							<p className="mb-4 text-sm text-slate-500">
 								Clique em um projeto para vê-lo
 							</p>
-							<div className="flex flex-wrap justify-between w-full">
+							<div className="flex flex-wrap justify-between w-full gap-2">
 								<a
 									href="#projeto-2024-1-smartfarm"
 									className="flex items-center gap-2 px-3 py-2 rounded-full bg-green-50 hover:bg-green-100 text-green-700 text-sm font-medium transition"
@@ -545,6 +577,14 @@ export default function Portfolio() {
 								>
 									<Play className="w-4 h-4" />
 									Clube de Membros
+								</a>
+
+								<a
+									href="#projeto-2025-2-precedentia"
+									className="flex items-center gap-2 px-3 py-2 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 text-sm font-medium transition"
+								>
+									<Scale className="w-4 h-4" />
+									PrecedentIA
 								</a>
 							</div>
 						</div>
@@ -1416,6 +1456,134 @@ export default function Portfolio() {
 										</CardContent>
 									</Card>
 								</div>
+
+								{/* Projeto 2025-2 - PrecedentIA */}
+								<div id="projeto-2025-2-precedentia" className="relative flex flex-col lg:flex-row lg:items-start gap-4 lg:gap-8">
+									{/* Timeline Dot */}
+									<div className="hidden lg:block relative z-10 flex-shrink-0">
+										<div className="w-16 h-16 bg-gradient-to-br from-slate-600 to-blue-700 rounded-full flex items-center justify-center shadow-lg">
+											<Scale className="w-8 h-8 text-white" />
+										</div>
+										<div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-slate-700 text-white text-xs px-2 py-1 rounded-full font-medium">
+											2025
+										</div>
+									</div>
+
+									{/* Project Card */}
+									<Card className="flex-1 bg-white shadow-lg lg:shadow-xl hover:shadow-xl lg:hover:shadow-2xl transition-all duration-300 border-0 overflow-hidden">
+										<div className="relative">
+											<ProjectCarousel images={projectImages.precedentia} alt="PrecedentIA - Xertica.ai" />
+											<div className="absolute top-3 lg:top-4 left-3 lg:left-4 z-10">
+												<Badge className="bg-slate-700 text-white font-medium text-xs lg:text-sm">Acadêmico</Badge>
+											</div>
+											<div className="absolute top-3 lg:top-4 right-3 lg:right-4 bg-white/90 backdrop-blur-sm rounded-full p-1.5 lg:p-2 z-10">
+												<Button size="sm" variant="ghost" className="h-6 w-6 lg:h-8 lg:w-8 p-0">
+													<ExternalLink className="w-3 h-3 lg:w-4 lg:h-4" />
+												</Button>
+											</div>
+										</div>
+
+										<CardHeader className="pb-3 lg:pb-4 p-4 lg:p-6">
+											<div className="flex items-start justify-between">
+												<div>
+													<CardTitle className="text-lg lg:text-xl text-gray-900 mb-2">
+														PrecedentIA - Xertica.ai
+													</CardTitle>
+													<div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-xs lg:text-sm text-gray-600">
+														<div className="flex items-center gap-1">
+															<Users className="w-3 h-3 lg:w-4 lg:h-4" />
+															Parceiro: Xertica.ai
+														</div>
+														<div className="flex items-center gap-1">
+															<Calendar className="w-3 h-3 lg:w-4 lg:h-4" />
+															2025
+														</div>
+													</div>
+												</div>
+											</div>
+										</CardHeader>
+
+										<CardContent className="space-y-4 lg:space-y-6 p-4 lg:p-6 pt-0">
+											{/* Título do Projeto */}
+											<div className="bg-gradient-to-r from-slate-50 to-blue-50 p-3 lg:p-4 rounded-lg border-l-4 border-slate-600">
+												<h3 className="text-base lg:text-lg font-bold text-gray-900 mb-2">
+													Plataforma de IA Jurídica para Geração de Minutas e Busca de Precedentes
+												</h3>
+												<p className="text-sm lg:text-base text-gray-700 leading-relaxed">
+													O PrecedentIA é uma aplicação desenvolvida em parceria com a Xertica.ai voltada para o universo jurídico. A plataforma utiliza inteligência artificial generativa para automatizar três fluxos principais: a geração de minutas de petição inicial, a geração de minutas de sentença e a busca inteligente de precedentes judiciais com base no conteúdo de uma petição inicial. Tanto o sistema de matching de precedentes quanto a geração das minutas são impulsionados por IA, combinando técnicas de RAG (Retrieval-Augmented Generation), embeddings semânticos e modelos de linguagem avançados para produzir documentos precisos, contextualizados e juridicamente embasados.
+												</p>
+											</div>
+
+											{/* Tecnologias */}
+											<div>
+												<h4 className="font-semibold text-gray-900 mb-2 lg:mb-3 flex items-center gap-2 text-sm lg:text-base">
+													<Zap className="w-3 h-3 lg:w-4 lg:h-4" />
+													Tecnologias Utilizadas
+												</h4>
+												<div className="flex flex-wrap gap-1.5 lg:gap-2">
+													{["React", "TypeScript", "Tailwind", "Next.js", "FastAPI", "Python", "LangChain", "RAG", "Embeddings", "Vector DB", "PostgreSQL", "n8n"].map((tech) => (
+														<Badge
+															key={tech}
+															className={`${techColors[tech] || "bg-gray-500 text-white"} font-medium text-xs lg:text-sm`}
+														>
+															{tech}
+														</Badge>
+													))}
+												</div>
+											</div>
+
+											{/* Contribuições Pessoais */}
+											<div className="bg-amber-50 p-3 lg:p-4 rounded-lg border border-amber-200">
+												<h4 className="font-semibold text-amber-900 mb-2 lg:mb-3 flex items-center gap-2 text-sm lg:text-base">
+													<Target className="w-3 h-3 lg:w-4 lg:h-4" />
+													Contribuições Pessoais
+												</h4>
+												<p className="text-amber-800 leading-relaxed text-sm lg:text-base">
+													Neste projeto atuei como Scrum Master, sendo responsável por garantir o bom andamento das sprints e a saúde do processo ágil dentro da equipe. Conduzi as cerimônias do Scrum — planejamentos, dailies, revisões e retrospectivas — facilitando a comunicação e removendo impedimentos para que o time pudesse manter um ritmo sustentável de entregas. Além da gestão do processo, assumi a responsabilidade pela definição da arquitetura do sistema, estruturando a separação entre os módulos de frontend, backend e pipeline de IA, e garantindo que as escolhas tecnológicas fossem coerentes com os requisitos de escalabilidade e manutenção do produto. Também fui responsável pela prototipação das interfaces no Figma, traduzindo os fluxos jurídicos complexos em telas intuitivas que orientaram o desenvolvimento do frontend.
+												</p>
+											</div>
+
+											{/* Hard Skills e Soft Skills */}
+											<div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
+												<div className="bg-blue-50 p-3 lg:p-4 rounded-lg">
+													<h4 className="font-semibold text-blue-900 mb-2 lg:mb-3 flex items-center gap-2 text-sm lg:text-base">
+														<Code className="w-3 h-3 lg:w-4 lg:h-4" />
+														Hard Skills Desenvolvidas
+													</h4>
+													<div className="text-sm text-blue-900 space-y-2">
+														<p>
+															Na frente de arquitetura, aprofundei meu conhecimento em design de sistemas distribuídos, definindo como os serviços de frontend (Next.js + React), backend (FastAPI em Python) e o pipeline de IA (LangChain, RAG, embeddings e banco vetorial) se integrariam de forma coesa e desacoplada.
+														</p>
+														<p>
+															Tive contato direto com o fluxo de RAG (Retrieval-Augmented Generation), compreendendo como documentos jurídicos são indexados via embeddings semânticos em um banco vetorial e depois recuperados para enriquecer o contexto dos prompts enviados ao modelo de linguagem, garantindo respostas precisas e embasadas.
+														</p>
+														<p>
+															Utilizei o n8n para orquestrar parte dos fluxos de automação do pipeline, conectando etapas de ingestão de documentos, geração de embeddings e chamadas aos modelos generativos de forma visual e modular. Também aprofundei minha prática com Figma na prototipação de interfaces complexas, como os fluxos de busca de precedentes e visualização das minutas geradas.
+														</p>
+													</div>
+												</div>
+												<div className="bg-green-50 p-3 lg:p-4 rounded-lg">
+													<h4 className="font-semibold text-green-900 mb-2 lg:mb-3 flex items-center gap-2 text-sm lg:text-base">
+														<Brain className="w-3 h-3 lg:w-4 lg:h-4" />
+														Soft Skills Desenvolvidas
+													</h4>
+													<div className="text-sm text-green-900 space-y-2">
+														<p>
+															O papel de Scrum Master foi um marco importante na minha trajetória. Diferente das experiências anteriores como PO, aqui minha responsabilidade era proteger a equipe e o processo: identificar gargalos silenciosos, mediar conflitos de prioridade e garantir que o time chegasse às entregas sem sobrecargas desnecessárias. Isso me exigiu uma escuta muito mais ativa e uma postura de liderança servidora.
+														</p>
+														<p>
+															Trabalhar com um domínio tão específico quanto o jurídico também desenvolveu minha capacidade de abstração: foi necessário aprender o vocabulário do cliente — petições, sentenças, precedentes — e transformar esse conhecimento em requisitos técnicos claros, mesmo sem ser advogado.
+														</p>
+														<p>
+															Por fim, tomar decisões de arquitetura em equipe exigiu que eu desenvolvesse a habilidade de argumentar tecnicamente, apresentar trade-offs de forma clara e construir consenso em vez de simplesmente impor uma solução.
+														</p>
+													</div>
+												</div>
+											</div>
+										</CardContent>
+									</Card>
+								</div>
+
 							</div>
 						</div>
 					</section>
