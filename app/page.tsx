@@ -220,6 +220,10 @@ export default function Portfolio() {
 			"/projects/precedentia1.png?height=300&width=600&text=PrecedentIA+Dashboard",
 			"/projects/precedentia2.png?height=300&width=600&text=PrecedentIA+Busca",
 			"/projects/precedentia3.png?height=300&width=600&text=PrecedentIA+Minuta",
+			"/projects/precedentia4.png?height=300&width=600&text=PrecedentIA+Minuta",
+			"/projects/precedentia5.png?height=300&width=600&text=PrecedentIA+Minuta",
+			"/projects/precedentia6.png?height=300&width=600&text=PrecedentIA+Minuta",
+			"/projects/precedentia7.png?height=300&width=600&text=PrecedentIA+Minuta",
 		],
 	}
 
