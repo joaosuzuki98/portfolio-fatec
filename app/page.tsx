@@ -454,7 +454,7 @@ export default function Portfolio() {
 					</a>
 
 					<a
-						href="#projeto-2025-2-precedentia"
+						href="#projeto-2026-1-precedentia"
 						className="flex items-center gap-3 p-2 lg:p-3 rounded-lg hover:bg-slate-50 transition-colors group cursor-pointer"
 						onClick={() => setSidebarOpen(false)}
 					>
