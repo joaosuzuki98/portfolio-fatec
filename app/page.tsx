@@ -33,6 +33,7 @@ import {
 	Blocks,
 	Play,
 	Scale,
+	CloudRainWind
 } from "lucide-react"
 import { useState } from "react"
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
@@ -224,6 +225,15 @@ export default function Portfolio() {
 			"/projects/precedentia5.png?height=300&width=600&text=PrecedentIA+Minuta",
 			"/projects/precedentia6.png?height=300&width=600&text=PrecedentIA+Minuta",
 			"/projects/precedentia7.png?height=300&width=600&text=PrecedentIA+Minuta",
+		],
+		nimbus: [
+			"/projects/nimbus1.png?height=300&width=600&text=Streaming+Home",
+			"/projects/nimbus2.png?height=300&width=600&text=Streaming+Home",
+			"/projects/nimbus3.png?height=300&width=600&text=Streaming+Home",
+			"/projects/nimbus4.png?height=300&width=600&text=Streaming+Home",
+			"/projects/nimbus5.png?height=300&width=600&text=Streaming+Home",
+			"/projects/nimbus6.png?height=300&width=600&text=Streaming+Home",
+			"/projects/nimbus7.png?height=300&width=600&text=Streaming+Home",
 		],
 	}
 
@@ -428,6 +438,22 @@ export default function Portfolio() {
 					</a>
 
 					<a
+						href="#projeto-2025-2-nimbus"
+						className="flex items-center gap-3 p-2 lg:p-3 rounded-lg hover:bg-sky-100 transition-colors group cursor-pointer"
+						onClick={() => setSidebarOpen(false)}
+					>
+						<div className="w-6 h-6 lg:w-8 lg:h-8 bg-gradient-to-br from-blue-900 to-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
+							<CloudRainWind className="w-3 h-3 lg:w-4 lg:h-4 text-white" />
+						</div>
+						<div className="min-w-0 flex-1">
+							<p className="font-medium text-gray-900 text-xs lg:text-sm group-hover:text-sky-600 transition-colors">
+								Nimbus
+							</p>
+							<p className="text-xs text-gray-500">Tecsus • 08/2024 - 11/2025</p>
+						</div>
+					</a>
+
+					<a
 						href="#projeto-2025-2-precedentia"
 						className="flex items-center gap-3 p-2 lg:p-3 rounded-lg hover:bg-slate-50 transition-colors group cursor-pointer"
 						onClick={() => setSidebarOpen(false)}
@@ -512,7 +538,7 @@ export default function Portfolio() {
 						<div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl lg:rounded-2xl p-6 lg:p-8 text-white">
 							<h2 className="text-2xl lg:text-3xl font-bold mb-3 lg:mb-4">Bem-vindo ao meu Portfólio! 👋</h2>
 							<p className="text-blue-100 text-base lg:text-lg leading-relaxed">
-								Me chamo João Suzuki e atualmente estou cursando o 3º semetre do tecnólogo de Desenvolvimento de Software Multiplataforma pela FATEC e durante este tempo pude particapar em projetos desenvolvidos em parceria com empresas reais e fictícias. Também sou formado em técnico em informática pela Senac, onde cursei durante o período de 2022 até 2024. Desde 2024, trabalho na empresa CFI Consultoria como desenvolvedor, sendo responsável pela criação e gestão dos sistemas internos da empresa.
+								Me chamo João Suzuki e atualmente estou cursando o 4º semetre do tecnólogo de Desenvolvimento de Software Multiplataforma pela FATEC e durante este tempo pude particapar em projetos desenvolvidos em parceria com empresas reais e fictícias. Também sou formado em técnico em informática pela Senac, onde cursei durante o período de 2022 até 2024. Desde 2024, trabalho na empresa CFI Consultoria como desenvolvedor, sendo responsável pela criação e gestão dos sistemas internos da empresa.
 							</p>
 						</div>
 					</section>
@@ -581,6 +607,14 @@ export default function Portfolio() {
 								>
 									<Play className="w-4 h-4" />
 									Clube de Membros
+								</a>
+
+								<a
+									href="#projeto-2025-2-nimbus"
+									className="flex items-center gap-2 px-3 py-2 rounded-full bg-sky-100 hover:bg-blue-200 text-blue-700 text-sm font-medium transition"
+								>
+									<CloudRainWind className="w-4 h-4" />
+									Nimbus
 								</a>
 
 								<a
