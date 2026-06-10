@@ -1521,7 +1521,7 @@ export default function Portfolio() {
 													Tecnologias Utilizadas
 												</h4>
 												<div className="flex flex-wrap gap-1.5 lg:gap-2">
-													{["React", "TypeScript", "Tailwind", "Next.js", "FastAPI", "Python", "LangChain", "RAG", "Embeddings", "Vector DB", "PostgreSQL", "n8n"].map((tech) => (
+													{["Flutter", "FastAPI", "Python", "RAG", "Embeddings", "Qdrant", "PostgreSQL", "Redis", "IA"].map((tech) => (
 														<Badge
 															key={tech}
 															className={`${techColors[tech] || "bg-gray-500 text-white"} font-medium text-xs lg:text-sm`}
@@ -1539,7 +1539,7 @@ export default function Portfolio() {
 													Contribuições Pessoais
 												</h4>
 												<p className="text-amber-800 leading-relaxed text-sm lg:text-base">
-													Neste projeto atuei como Scrum Master, sendo responsável por garantir o bom andamento das sprints e a saúde do processo ágil dentro da equipe. Conduzi as cerimônias do Scrum — planejamentos, dailies, revisões e retrospectivas — facilitando a comunicação e removendo impedimentos para que o time pudesse manter um ritmo sustentável de entregas. Além da gestão do processo, assumi a responsabilidade pela definição da arquitetura do sistema, estruturando a separação entre os módulos de frontend, backend e pipeline de IA, e garantindo que as escolhas tecnológicas fossem coerentes com os requisitos de escalabilidade e manutenção do produto. Também fui responsável pela prototipação das interfaces no Figma, traduzindo os fluxos jurídicos complexos em telas intuitivas que orientaram o desenvolvimento do frontend.
+													Neste projeto atuei como Scrum Master, sendo responsável por garantir o bom andamento das sprints e a saúde do processo ágil dentro da equipe. Conduzi as cerimônias do Scrum: planejamentos, dailies, revisões e retrospectivas, facilitando a comunicação e removendo impedimentos para que o time pudesse manter um ritmo sustentável de entregas. Além da gestão do processo, assumi a responsabilidade pela definição da arquitetura do sistema, estruturando a separação entre os módulos de frontend, backend e pipeline de IA, e garantindo que as escolhas tecnológicas fossem coerentes com os requisitos de escalabilidade e manutenção do produto. Também fui responsável pela prototipação das interfaces no Figma.
 												</p>
 											</div>
 
@@ -1552,13 +1552,13 @@ export default function Portfolio() {
 													</h4>
 													<div className="text-sm text-blue-900 space-y-2">
 														<p>
-															Na frente de arquitetura, aprofundei meu conhecimento em design de sistemas distribuídos, definindo como os serviços de frontend (Next.js + React), backend (FastAPI em Python) e o pipeline de IA (LangChain, RAG, embeddings e banco vetorial) se integrariam de forma coesa e desacoplada.
+															Na frente de arquitetura, aprofundei meu conhecimento em design de sistemas distribuídos, definindo como os serviços de frontend, backend e a pipeline de IA se integrariam de forma coesa e desacoplada.
 														</p>
 														<p>
-															Tive contato direto com o fluxo de RAG (Retrieval-Augmented Generation), compreendendo como documentos jurídicos são indexados via embeddings semânticos em um banco vetorial e depois recuperados para enriquecer o contexto dos prompts enviados ao modelo de linguagem, garantindo respostas precisas e embasadas.
+															Tive contato direto com o fluxo de RAG, compreendendo como documentos jurídicos são indexados via embeddings semânticos em um banco vetorial e depois recuperados para enriquecer o contexto dos prompts enviados ao modelo de linguagem, garantindo respostas precisas e embasadas.
 														</p>
 														<p>
-															Utilizei o n8n para orquestrar parte dos fluxos de automação do pipeline, conectando etapas de ingestão de documentos, geração de embeddings e chamadas aos modelos generativos de forma visual e modular. Também aprofundei minha prática com Figma na prototipação de interfaces complexas, como os fluxos de busca de precedentes e visualização das minutas geradas.
+															Aprofundei minha prática com Figma na prototipação de interfaces complexas, como os fluxos de busca de precedentes e visualização das minutas geradas.
 														</p>
 													</div>
 												</div>
@@ -1569,10 +1569,10 @@ export default function Portfolio() {
 													</h4>
 													<div className="text-sm text-green-900 space-y-2">
 														<p>
-															O papel de Scrum Master foi um marco importante na minha trajetória. Diferente das experiências anteriores como PO, aqui minha responsabilidade era proteger a equipe e o processo: identificar gargalos silenciosos, mediar conflitos de prioridade e garantir que o time chegasse às entregas sem sobrecargas desnecessárias. Isso me exigiu uma escuta muito mais ativa e uma postura de liderança servidora.
+															O papel de Scrum Master foi um marco importante na minha trajetória. Diferente das experiências anteriores como PO, aqui minha responsabilidade era proteger a equipe e o processo: identificar gargalos silenciosos, mediar conflitos de prioridade e garantir que o time chegasse às entregas sem sobrecargas desnecessárias. Isso me exigiu uma escuta muito mais ativa e uma postura de liderança.
 														</p>
 														<p>
-															Trabalhar com um domínio tão específico quanto o jurídico também desenvolveu minha capacidade de abstração: foi necessário aprender o vocabulário do cliente — petições, sentenças, precedentes — e transformar esse conhecimento em requisitos técnicos claros, mesmo sem ser advogado.
+															Trabalhar com um domínio tão específico quanto o jurídico também desenvolveu minha capacidade de abstração: foi necessário aprender o vocabulário do cliente, como petições, sentenças, precedentes e transformar esse conhecimento em requisitos técnicos claros, mesmo sem ser advogado.
 														</p>
 														<p>
 															Por fim, tomar decisões de arquitetura em equipe exigiu que eu desenvolvesse a habilidade de argumentar tecnicamente, apresentar trade-offs de forma clara e construir consenso em vez de simplesmente impor uma solução.
