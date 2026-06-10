@@ -439,7 +439,7 @@ export default function Portfolio() {
 							<p className="font-medium text-gray-900 text-xs lg:text-sm group-hover:text-slate-700 transition-colors">
 								PrecedentIA
 							</p>
-							<p className="text-xs text-gray-500">Xertica.ai • 2025</p>
+							<p className="text-xs text-gray-500">Xertica.ai • 03/2026 - 06/2026</p>
 						</div>
 					</a>
 				</div>
@@ -584,7 +584,7 @@ export default function Portfolio() {
 								</a>
 
 								<a
-									href="#projeto-2025-2-precedentia"
+									href="#projeto-2026-1-precedentia"
 									className="flex items-center gap-2 px-3 py-2 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 text-sm font-medium transition"
 								>
 									<Scale className="w-4 h-4" />
