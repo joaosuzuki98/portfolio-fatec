@@ -1457,15 +1457,15 @@ export default function Portfolio() {
 									</Card>
 								</div>
 
-								{/* Projeto 2025-2 - PrecedentIA */}
-								<div id="projeto-2025-2-precedentia" className="relative flex flex-col lg:flex-row lg:items-start gap-4 lg:gap-8">
+								{/* Projeto 2026-1 - PrecedentIA */}
+								<div id="projeto-2026-1-precedentia" className="relative flex flex-col lg:flex-row lg:items-start gap-4 lg:gap-8">
 									{/* Timeline Dot */}
 									<div className="hidden lg:block relative z-10 flex-shrink-0">
 										<div className="w-16 h-16 bg-gradient-to-br from-slate-600 to-blue-700 rounded-full flex items-center justify-center shadow-lg">
 											<Scale className="w-8 h-8 text-white" />
 										</div>
 										<div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-slate-700 text-white text-xs px-2 py-1 rounded-full font-medium">
-											2025
+											2026
 										</div>
 									</div>
 
@@ -1496,7 +1496,7 @@ export default function Portfolio() {
 														</div>
 														<div className="flex items-center gap-1">
 															<Calendar className="w-3 h-3 lg:w-4 lg:h-4" />
-															2025
+															2026
 														</div>
 													</div>
 												</div>
